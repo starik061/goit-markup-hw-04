@@ -289,40 +289,6 @@ img {
 
 /* Customers  */
 
-/* .customer-item {
-  display: flex;
-  justify-content: center;
-  width: calc((100%-2.13% * 5) / 6);
-  margin-right: 2.13%;
-
-  cursor: pointer;
-}
-.customer-item a {
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  padding: 15px 31px;
-}
-
-.customer-item a:hover,
-.customer-item a:focus {
-  border-color: var(--hover-color);
-}
-.customer-item a:hover svg {
-  fill: var(--hover-color);
-}
-.customer-item:last-child {
-  margin-right: 0;
-}
-
-.customer-item svg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 104px;
-  height: 56px;
-  color: var(--icon-color);
-  fill: currentColor;
-} */
 .customer-item:not(:last-child) {
   margin-right: 24px;
 }
