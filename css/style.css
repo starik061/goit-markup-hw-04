@@ -9,6 +9,8 @@
   --hover-color: #404bbf;
   --footer-text-color: #e7e9fc;
   --first-part-logo-color: #4d5ae5;
+  --footer-socials-bg: rgba(255, 255, 255, 0.1);
+  --footer-socials-bg-hover: #31d0aa;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -111,6 +113,22 @@ img {
   font-style: normal;
 }
 /* Hero section  */
+
+.bg-container {
+  max-width: 1440px;
+  margin: -188px auto -188px;
+  padding-top: 188px;
+  padding-bottom: 188px;
+  /* background-color: rgba(46, 47, 66, 0.7); */
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7) 100%
+    ),
+    url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .hero {
   padding-top: 188px;
   padding-bottom: 188px;
@@ -182,6 +200,18 @@ img {
   margin-right: 2.13%;
 }
 
+.benefits-icon {
+  margin-bottom: 8px;
+  background-color: var(--secondary-background-color);
+  border-radius: 4px;
+}
+.benefits-icon svg {
+  display: block;
+  max-width: 60px;
+  max-height: 112px;
+  margin: 0 auto;
+}
+
 /* "What are we doing" section  */
 
 .doing-section {
@@ -189,7 +219,8 @@ img {
 }
 
 .doing-title,
-.team-title {
+.team-title,
+.customer-title {
   margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
@@ -229,6 +260,57 @@ img {
 .team-member-card img {
   margin-bottom: 32px;
 }
+.position {
+  margin-bottom: 8px;
+}
+.social-network-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.social-network-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--first-part-logo-color);
+  border-radius: 50%;
+}
+
+.social-network-link:hover,
+.social-network-link:focus {
+  background-color: var(--hover-color);
+}
+.social-network-link svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Customers  */
+
+.customer-item {
+  display: flex;
+  justify-content: center;
+  width: calc((100%-2.13% * 5) / 6);
+  margin-right: 2.13%;
+  padding: 15px 31px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+
+.customer-item:last-child {
+  margin-right: 0;
+}
+
+.customer-item svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 104px;
+  height: 56px;
+}
 /* Footer  */
 
 footer {
@@ -238,7 +320,7 @@ footer {
 }
 
 .footer-logo {
-  display: block;
+  display: inline-block;
   margin-right: 0;
   margin-bottom: 16px;
   padding: 0;
@@ -247,11 +329,54 @@ footer {
 }
 
 .footer-text {
-  width: 23.4%;
+  max-width: 264px;
   font-size: 16px;
   color: var(--footer-text-color);
 }
+.footer-element:first-child {
+  margin-right: 120px;
+}
 
+.social-media {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-background-color);
+}
+
+.footer-social-networks {
+  display: flex;
+  max-width: 208px;
+  justify-content: flex-start;
+}
+
+.footer-social-networks-item {
+  margin-right: 16px;
+}
+
+.footer-social-networks-item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--footer-socials-bg);
+}
+
+.footer-social-networks-item a:hover {
+  background-color: var(--footer-socials-bg-hover);
+}
+.footer-social-networks-item:last-child {
+  margin-right: 0;
+}
+
+.footer-social-networks-item svg {
+  width: 24px;
+  height: 24px;
+}
 /* PORTFOLIO PAGE  */
 .portfolio-section {
   padding-top: 96px;
