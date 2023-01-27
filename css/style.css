@@ -360,8 +360,6 @@ footer {
 
 .footer-social-networks {
   display: flex;
-  max-width: 208px;
-  justify-content: flex-start;
 }
 
 .footer-social-networks-item {
@@ -437,8 +435,11 @@ footer {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.portfolio-list > li:hover,
-.portfolio-list > li:focus {
+.portfolio-list a {
+  display: inline-block;
+}
+.portfolio-list a:hover,
+.portfolio-list a:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -450,6 +451,7 @@ footer {
 .portfolio-list > li:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
+
 .border-container {
   padding-left: 16px;
   padding-top: 32px;
