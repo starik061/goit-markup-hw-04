@@ -11,6 +11,7 @@
   --first-part-logo-color: #4d5ae5;
   --footer-socials-bg: rgba(255, 255, 255, 0.1);
   --footer-socials-bg-hover: #31d0aa;
+  --icon-color: #8e8f99;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -295,11 +296,22 @@ img {
   justify-content: center;
   width: calc((100%-2.13% * 5) / 6);
   margin-right: 2.13%;
-  padding: 15px 31px;
+
+  cursor: pointer;
+}
+.customer-item a {
   border: 1px solid #8e8f99;
   border-radius: 4px;
+  padding: 15px 31px;
 }
 
+.customer-item a:hover {
+  color: var(--hover-color);
+  border-color: var(--hover-color);
+}
+.customer-item a:hover svg {
+  fill: var(--hover-color);
+}
 .customer-item:last-child {
   margin-right: 0;
 }
@@ -310,7 +322,10 @@ img {
   align-items: center;
   width: 104px;
   height: 56px;
+  color: var(--icon-color);
+  fill: currentColor;
 }
+
 /* Footer  */
 
 footer {
