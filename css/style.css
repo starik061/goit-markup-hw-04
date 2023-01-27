@@ -366,7 +366,8 @@ footer {
   background-color: var(--footer-socials-bg);
 }
 
-.footer-social-networks-item a:hover {
+.footer-social-networks-item a:hover,
+.footer-social-networks-item a:focus {
   background-color: var(--footer-socials-bg-hover);
 }
 .footer-social-networks-item:last-child {
@@ -421,6 +422,13 @@ footer {
   width: 360px;
   margin-right: 24px;
   margin-bottom: 48px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-list > li:hover,
+.portfolio-list > li:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-list > li:nth-child(3n) {
