@@ -116,11 +116,15 @@ img {
 /* Hero section  */
 
 .bg-container {
+}
+
+.hero {
   max-width: 1440px;
-  margin: -188px auto -188px;
+  margin: 0 auto;
+
   padding-top: 188px;
   padding-bottom: 188px;
-  /* background-color: rgba(46, 47, 66, 0.7); */
+  text-align: center;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7) 100%
@@ -128,12 +132,6 @@ img {
     url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.hero {
-  padding-top: 188px;
-  padding-bottom: 188px;
-  text-align: center;
   background-color: var(--main-title-color);
 }
 
