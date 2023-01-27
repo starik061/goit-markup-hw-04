@@ -306,7 +306,6 @@ img {
 }
 
 .customer-item a:hover {
-  color: var(--hover-color);
   border-color: var(--hover-color);
 }
 .customer-item a:hover svg {
